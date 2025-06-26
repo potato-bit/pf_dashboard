@@ -1,7 +1,16 @@
 # Reporting Data Dashboard
-A R Shiny dashboard to automatically prepare graphs, gather summary statistics, and perform statistical tests for a 360-feedback platform. Users select themes of questions called "Cells" and review themselves on a scale of 1-10, then invite reviewers to rate them on the behaviours, called "Questions". This demo uses a synthetic dataset generated using the `dataset.ipynb` file and uses simple numeric labels e.g. Cell 1, Cell 2, Cell 3, Question 1, Question 2, Question 3 etc. The dataset includes 3 fictional organisations with 3 populations (or departments) in each. Each population contains 3 surveys (or the set of questions a user engages with at one time). Every population has a distinct subset of all users, all users in a population are included in every survey. All users have invited reviewers who are either 'line managers' or 'others.' User demographics are also randomly generated, full details available in `dataset.ipynb`
+A R Shiny dashboard to automatically prepare graphs, gather summary statistics, and perform statistical tests for a 360-feedback platform. Users select themes of questions called "Cells" and review themselves on a scale of 1-10, then invite reviewers to rate them on the behaviours, called "Questions". 
+
+This demo uses a synthetic dataset generated using the `dataset.ipynb` file and uses simple numeric labels e.g. Cell 1, Cell 2, Cell 3, Question 1, Question 2, Question 3 etc. The dataset includes 3 fictional organisations with 3 populations (or departments) in each. Each population contains 3 surveys (or the set of questions a user engages with at one time). Every population has a distinct subset of all users, all users in a population are included in every survey. All users have invited reviewers who are either 'line managers' or 'others.' User demographics are also randomly generated, full details available in `dataset.ipynb`
+
+## Prerequisites
+1. Install the latest version of R and RStudio.
+2. Ensure that all files and folders are in the same parent directory.
+3. On the first run, it may take a few minutes while it installs all necessary packages and loads fonts. 
 
 ## Get Started
+Open `server.R` or `ui.R` in RStudio and click on "Run App."
+
 Select an organisation or population ID from the dropdowns in the sidebar. Fill in the remaining filters if you wish. Navigate functions using the tabs, use the "?" icon for more info.
 
 Graphs are provided under the "Report Graph" boxtabs, expand to fill the inputs and click on "Draw Graph" to create the plot. Customise plots using the gear icon on the top right, customise inputs using the input selections. *Note: you must click on "Draw Graph" after any modifications to view them.*
